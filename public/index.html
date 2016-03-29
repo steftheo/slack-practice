@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
-asdf
+
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
@@ -26,7 +26,10 @@ asdf
 
   <script type="text/javascript">
      const SendPostView = require("send-post-view")
-
+     const channelHistoryView = require("channel-history-view")
+    //  channelHistoryView("slack_practice")
+     const history = document.querySelector(".main")
+     new channelHistoryView(history)
      const poster = document.querySelector(".send-post")
      new SendPostView(poster)
   </script>

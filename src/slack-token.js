@@ -1,0 +1,3 @@
+const token = `xoxp-21447397957-23567270915-30355267601-01053a2701`;
+
+export default token;

@@ -1,4 +1,4 @@
-import floop from 'message-sender'
+import floop from 'message-sender';
 
 export default class SendPostView {
   constructor(el) {
@@ -24,8 +24,8 @@ export default class SendPostView {
         catch((e) => {
           this.notification = `There was an error: ${e}`;
           this.render();
-        })
-    })
+        });
+    });
   }
 
   render() {
@@ -34,8 +34,8 @@ export default class SendPostView {
       <p>${this.notification}</p>
       <input class='post-message' type='text' placeholder='Message'>
       <input class='post-room' type='text' placeholder='Room Name'>
-      <button>Post</button>`
-      
+      <button>Post</button>`;
+
     this.listenForClick();
   }
 }
